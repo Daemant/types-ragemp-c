@@ -1,34 +1,34 @@
 declare namespace RageEnums {
 	const enum EventKey {
-		BROWSER_CREATED = "browserCreated",
-		BROWSER_DOM_READY = "browserDomReady",
-		BROWSER_LOADING_FAILED = "browserLoadingFailed",
-		ENTITY_CREATED = "entityCreated",
-		ENTITY_STREAM_IN = "entityStreamIn",
-		ENTITY_STREAM_OUT = "entityStreamOut",
-		GUI_READY = "guiReady",
-		CLICK = "click",
-		PLAYER_CHAT = "playerChat",
-		PLAYER_CREATE_WAYPOINT = "playerCreateWaypoint",
-		PLAYER_COMMAND = "playerCommand",
-		PLAYER_DEATH = "playerDeath",
-		PLAYER_ENTER_CHECKPOINT = "playerEnterCheckpoint",
-		PLAYER_ENTER_COLSHAPE = "playerEnterColshape",
-		PLAYER_EXIT_CHECKPOINT = "playerExitCheckpoint",
-		PLAYER_EXIT_COLSHAPE = "playerExitColshape",
-		PLAYER_JOIN = "playerJoin",
-		PLAYER_QUIT = "playerQuit",
-		PLAYER_REACH_WAYPOINT = "playerReachWaypoint",
-		PLAYER_RESURRECT = "playerResurrect",
-		PLAYER_RULE_TRIGGERED = "playerRuleTriggered",
-		PLAYER_SPAWN = "playerSpawn",
-		PLAYER_START_TALKING = "playerStartTalking",
-		PLAYER_STOP_TALKING = "playerStopTalking",
-		PLAYER_WEAPON_SHOT = "playerWeaponShot",
-		RENDER = "render",
-		VEHICLE_DEATH = "vehicleDeath"
+		BROWSER_CREATED = 'browserCreated',
+		BROWSER_DOM_READY = 'browserDomReady',
+		BROWSER_LOADING_FAILED = 'browserLoadingFailed',
+		ENTITY_CREATED = 'entityCreated',
+		ENTITY_STREAM_IN = 'entityStreamIn',
+		ENTITY_STREAM_OUT = 'entityStreamOut',
+		GUI_READY = 'guiReady',
+		CLICK = 'click',
+		PLAYER_CHAT = 'playerChat',
+		PLAYER_CREATE_WAYPOINT = 'playerCreateWaypoint',
+		PLAYER_COMMAND = 'playerCommand',
+		PLAYER_DEATH = 'playerDeath',
+		PLAYER_ENTER_CHECKPOINT = 'playerEnterCheckpoint',
+		PLAYER_ENTER_COLSHAPE = 'playerEnterColshape',
+		PLAYER_EXIT_CHECKPOINT = 'playerExitCheckpoint',
+		PLAYER_EXIT_COLSHAPE = 'playerExitColshape',
+		PLAYER_JOIN = 'playerJoin',
+		PLAYER_QUIT = 'playerQuit',
+		PLAYER_REACH_WAYPOINT = 'playerReachWaypoint',
+		PLAYER_RESURRECT = 'playerResurrect',
+		PLAYER_RULE_TRIGGERED = 'playerRuleTriggered',
+		PLAYER_SPAWN = 'playerSpawn',
+		PLAYER_START_TALKING = 'playerStartTalking',
+		PLAYER_STOP_TALKING = 'playerStopTalking',
+		PLAYER_WEAPON_SHOT = 'playerWeaponShot',
+		RENDER = 'render',
+		VEHICLE_DEATH = 'vehicleDeath',
 	}
-	
+
 	const enum HudComponent {
 		HUD = 0,
 		WANTED_STARS = 1,
@@ -50,13 +50,13 @@ declare namespace RageEnums {
 		SAVING_GAME = 17,
 		GAME_STREAM = 18,
 		WEAPON_WHEEL = 19,
-		WEAPON_WHEEL_STATS = 20
+		WEAPON_WHEEL_STATS = 20,
 	}
 
 	const enum ScreenshotType {
 		JPG = 0,
 		PNG = 1,
-		BMP = 2
+		BMP = 2,
 	}
 
 	const enum Controls {
@@ -402,6 +402,6 @@ declare namespace RageEnums {
 		VEHICLE_CAR_JUMP = 339,
 		VEHICLE_ROCKET_BOOST = 340,
 		VEHICLE_PARACHUTE = 341,
-		VEHICLE_BIKE_WINGS = 342
+		VEHICLE_BIKE_WINGS = 342,
 	}
 }
