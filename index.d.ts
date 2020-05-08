@@ -563,6 +563,34 @@ interface PedMp extends EntityMp {
 		lockY: boolean,
 		lockZ: boolean
 	): void;
+	setHeadOverlay(overlayID: number, index: number, opacity: number): void;
+	setHeadOverlayColor(
+		overlayID: number,
+		colorType: number,
+		colorID: number,
+		secondColorID: number
+	): void;
+	setComponentVariation(
+		componentId: number,
+		drawableId: number,
+		textureId: number,
+		paletteId: number
+	): void;
+	setHairColor(colorID: number, highlightColorID: number): void;
+	setEyeColor(index: number): void;
+	setHeadBlendData(
+		shapeFirstID: number,
+		shapeSecondID: number,
+		shapeThirdID: number,
+		skinFirstID: number,
+		skinSecondID: number,
+		skinThirdID: number,
+		shapeMix: number,
+		skinMix: number,
+		thirdMix: number,
+		isParent: boolean
+	): void;
+	setFaceFeature(index: number, scale: number): void;
 	// TODO
 }
 
@@ -2019,7 +2047,7 @@ interface VehicleMp extends EntityMp {
 	getHeliEngineHealth(): number;
 	getHeliMainRotorHealth(): number;
 	getHeliTailRotorHealth(): number;
-	getIsEngineRunning(): boolean;
+	getIsEngineRunning(): number;
 	getIsLeftHeadlightDamaged(): boolean;
 	getIsPrimaryColourCustom(): boolean;
 	getIsRightHeadlightDamaged(): boolean;
@@ -6553,7 +6581,7 @@ interface GameZoneMp {
 
 interface GuiChatMp {
 	colors: boolean;
-	safe: boolean;
+	safeMode: boolean;
 
 	activate(state: boolean): void;
 	push(text: string): void;
